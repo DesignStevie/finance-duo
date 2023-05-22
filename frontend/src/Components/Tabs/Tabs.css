@@ -1,0 +1,25 @@
+.tabs{
+    background: var(--tertiaryGrey);
+    display: inline-block;
+    padding: .5rem 0rem;
+    border-radius: .5rem;
+}
+
+.tabOption{
+    background: var(--tertiaryGrey);
+    padding: .5rem 2rem;
+    color: var(--primaryGrey);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.tabOption:hover{
+    background: #E0E0E0;
+}
+
+.activeTab, .activeTab:hover{
+    background: var(--globalWhite);
+    color: var(--primaryPurple);
+    border: 1px solid var(--primaryPurple)
+}
+

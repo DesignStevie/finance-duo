@@ -1,0 +1,83 @@
+:root{
+  --primaryPurple: #5D4FFF;
+  --secondaryPurple: #E7E5FF;
+  --tertiaryPurple: #F7F6FF;
+  --pink: #BD4FFF;
+  --primaryGrey: #333;
+  --secondaryGrey: #4F4F4F;
+  --tertiaryGrey: #EEE;
+  --backgroundGrey: #FAFAFA;
+  --globalWhite: #FFF;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--backgroundGrey);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,h2,h3,h4,p{
+  color:var(--primaryGrey);
+  margin: 0;
+}
+
+h1,h2,h3,h4,p,button,input{
+  font-family: 'Open Sans', sans-serif;
+}
+
+select{
+  padding: .5rem;
+  border: 1px solid 1px solid var(--tertiaryGrey);
+  border-radius: .25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+input{
+  padding: .5rem;
+  border: 1px solid var(--tertiaryGrey);
+  border-radius: .25rem;
+}
+
+option{
+  padding: .5rem;
+}
+
+input:focus,select:focus{
+  border: 1px solid #5D4FFF;
+  outline: none;
+}
+
+button{
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 0.875rem;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.primaryButton{
+  color: var(--globalWhite);
+  background: var(--primaryPurple);
+}
+
+.mainContainer{
+  padding:2rem;
+  margin-left: 35rem;
+}
+.container{
+  max-width: 800px;
+  margin: auto;
+}

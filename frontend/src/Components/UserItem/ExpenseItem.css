@@ -1,0 +1,51 @@
+.item{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #EFEFEF;
+}
+.itemAmount{
+    padding: .5rem 1rem;
+}
+.expenseItem{
+    border: 1px solid #EB5757;
+    border-radius: .5rem;
+}
+.expenseItem p{
+    color: #EB5757
+}
+
+.incomeItem{
+    border: 1px solid #27AE60;
+    border-radius: .5rem;
+}
+.incomeItem p{
+    color: #27AE60
+}
+.itemName{
+    color:#828282;
+}
+.itemDate{
+    color: #BDBDBD;
+}
+.itemLeft{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: auto;
+    align-items: center;
+}
+.itemActions{
+    display: flex;
+    gap:1rem;
+}
+
+.itemActions svg{
+    cursor:pointer;
+    fill:#ccc;
+}
+
+.itemActions svg:hover{
+    fill: black;
+}

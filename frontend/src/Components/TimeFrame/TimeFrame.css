@@ -1,0 +1,32 @@
+.selectedTimeFrame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+.selectedTimeFrame p{
+    color: var(--primaryPurple);
+}
+
+.timeFrameOptions{
+    position: fixed;
+    margin-top: .5rem;
+    background: var(--globalWhite);
+    border-radius: .5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 16px rgba(0 0 0 / 0.1);
+}
+
+.option{
+    margin: 0 !important;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.option:hover{
+    background: var(--tertiaryGrey);
+}
