@@ -19,7 +19,7 @@ function App() {
   const [notification, setNotification] = useState(false);
 
   useEffect(() => {
-    Axios.get("https://finance-duo-designstevie.vercel.app/api/getExpenses")
+    Axios.get("https://finance-duo-nine.vercel.app/api/getExpenses")
       .then((response) => {
         setAllItemsList(response.data);
       })
@@ -64,7 +64,7 @@ function App() {
   //-----------------Add a new expense-----------------//
   const addExpense = async (name, type, date, amount) => {
     await Axios.post(
-      "https://finance-duo-designstevie.vercel.app/api/addExpense",
+      "https://finance-duo-nine.vercel.app/api/addExpense",
       {
         name,
         type,
@@ -95,7 +95,7 @@ function App() {
   //-----------------Remove an expense-----------------//
   const removeExpense = (id) => {
     Axios.delete(
-      `https://finance-duo-designstevie.vercel.app/api/removeExpense/${id}`
+      `https://finance-duo-nine.vercel.app/removeExpense/${id}`
     )
       .then(() => {
         setAllItemsList(
@@ -122,7 +122,7 @@ function App() {
     const newDate = date;
     const newAmount = amount;
 
-    Axios.put("https://finance-duo-designstevie.vercel.app/api/updateExpense", {
+    Axios.put("https://finance-duo-nine.vercel.app/api/updateExpense", {
       id: id,
       newName: newName,
       newType: newType,
