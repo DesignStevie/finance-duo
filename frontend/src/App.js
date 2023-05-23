@@ -6,8 +6,6 @@ import UserItem from "./Components/UserItem/ExpenseItem";
 import Notification from "./Components/Notification/Notification";
 import Tabs from "./Components/Tabs/Tabs";
 import AnalyticsAverage from "./Components/AnalyticsAverage/AnalyticsAverage";
-import cors from 'cors'
-app.use(cors());
 
 function App() {
   const [currentTab, setCurrentTab] = useState("All");
