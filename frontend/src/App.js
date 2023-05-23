@@ -95,7 +95,7 @@ function App() {
   //-----------------Remove an expense-----------------//
   const removeExpense = (id) => {
     Axios.delete(
-      `https://finance-duo-nine.vercel.app/removeExpense/${id}`
+      `https://finance-duo-nine.vercel.app/api/removeExpense/${id}`
     )
       .then(() => {
         setAllItemsList(
